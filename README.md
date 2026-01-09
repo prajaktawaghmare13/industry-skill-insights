@@ -1,3 +1,4 @@
+https://nbviewer.org/github/prajaktawaghmare13/industry-skill-insights/blob/main/notebooks/02_skill_eda.ipynb
 # Industry Skill Insights
 Data-Driven Analysis of Job Market Skill Demand
 
