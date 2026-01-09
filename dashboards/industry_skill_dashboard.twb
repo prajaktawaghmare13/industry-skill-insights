@@ -1,0 +1,1160 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleaned_jobs' inline='true' name='federated.1l18vb401wdbtx1d0ws000qgo0l5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleaned_jobs' name='textscan.0sjatzo1hbd7my1drz6us1ajfalb'>
+            <connection class='textscan' directory='E:/industry-skill-insights/data' filename='cleaned_jobs.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0sjatzo1hbd7my1drz6us1ajfalb' name='cleaned_jobs.csv' table='[cleaned_jobs#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='job_link' ordinal='0' />
+            <column datatype='string' name='last_processed_time' ordinal='1' />
+            <column datatype='string' name='last_status' ordinal='2' />
+            <column datatype='boolean' name='got_summary' ordinal='3' />
+            <column datatype='boolean' name='got_ner' ordinal='4' />
+            <column datatype='boolean' name='is_being_worked' ordinal='5' />
+            <column datatype='string' name='job_title' ordinal='6' />
+            <column datatype='string' name='company' ordinal='7' />
+            <column datatype='string' name='job_location' ordinal='8' />
+            <column datatype='date' name='first_seen' ordinal='9' />
+            <column datatype='string' name='search_city' ordinal='10' />
+            <column datatype='string' name='search_country' ordinal='11' />
+            <column datatype='string' name='search_position' ordinal='12' />
+            <column datatype='string' name='job_level' ordinal='13' />
+            <column datatype='string' name='job_type' ordinal='14' />
+            <column datatype='string' name='job_summary' ordinal='15' />
+            <column datatype='integer' name='has_python' ordinal='16' />
+            <column datatype='integer' name='has_sql' ordinal='17' />
+            <column datatype='integer' name='has_excel' ordinal='18' />
+            <column datatype='integer' name='has_power_bi' ordinal='19' />
+            <column datatype='integer' name='has_tableau' ordinal='20' />
+            <column datatype='integer' name='has_machine_learning' ordinal='21' />
+            <column datatype='integer' name='has_statistics' ordinal='22' />
+            <column datatype='integer' name='has_cloud' ordinal='23' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_link</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_link]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>job_link</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_processed_time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last_processed_time]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>last_processed_time</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[last_status]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>last_status</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>got_summary</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[got_summary]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>got_summary</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>got_ner</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[got_ner]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>got_ner</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_being_worked</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_being_worked]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>is_being_worked</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_title]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>job_title</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>company</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[company]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>company</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_location]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>job_location</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_seen</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[first_seen]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>first_seen</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>search_city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[search_city]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>search_city</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>search_country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[search_country]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>search_country</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>search_position</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[search_position]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>search_position</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_level]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>job_level</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_type]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>job_type</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>job_summary</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[job_summary]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>job_summary</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_python</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[has_python]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>has_python</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_sql</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[has_sql]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>has_sql</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_excel</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[has_excel]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>has_excel</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_power_bi</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[has_power_bi]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>has_power_bi</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_tableau</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[has_tableau]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>has_tableau</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_machine_learning</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[has_machine_learning]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>has_machine_learning</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_statistics</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[has_statistics]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>has_statistics</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>has_cloud</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[has_cloud]</local-name>
+            <parent-name>[cleaned_jobs.csv]</parent-name>
+            <remote-alias>has_cloud</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='cleaned_jobs.csv' datatype='table' name='[__tableau_internal_object_id__].[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]' role='measure' type='quantitative' />
+      <column caption='Company' datatype='string' name='[company]' role='dimension' type='nominal' />
+      <column caption='First Seen' datatype='date' name='[first_seen]' role='dimension' type='ordinal' />
+      <column caption='Got Ner' datatype='boolean' name='[got_ner]' role='dimension' type='nominal' />
+      <column caption='Got Summary' datatype='boolean' name='[got_summary]' role='dimension' type='nominal' />
+      <column caption='Has Cloud' datatype='integer' name='[has_cloud]' role='measure' type='quantitative' />
+      <column caption='Has Excel' datatype='integer' name='[has_excel]' role='measure' type='quantitative' />
+      <column caption='Has Machine Learning' datatype='integer' name='[has_machine_learning]' role='measure' type='quantitative' />
+      <column caption='Has Power Bi' datatype='integer' name='[has_power_bi]' role='measure' type='quantitative' />
+      <column caption='Has Python' datatype='integer' name='[has_python]' role='measure' type='quantitative' />
+      <column caption='Has Sql' datatype='integer' name='[has_sql]' role='measure' type='quantitative' />
+      <column caption='Has Statistics' datatype='integer' name='[has_statistics]' role='measure' type='quantitative' />
+      <column caption='Has Tableau' datatype='integer' name='[has_tableau]' role='measure' type='quantitative' />
+      <column caption='Is Being Worked' datatype='boolean' name='[is_being_worked]' role='dimension' type='nominal' />
+      <column caption='Job Level' datatype='string' name='[job_level]' role='dimension' type='nominal' />
+      <column caption='Job Link' datatype='string' name='[job_link]' role='dimension' type='nominal' />
+      <column caption='Job Location' datatype='string' name='[job_location]' role='dimension' type='nominal' />
+      <column caption='Job Summary' datatype='string' name='[job_summary]' role='dimension' type='nominal' />
+      <column caption='Job Title' datatype='string' name='[job_title]' role='dimension' type='nominal' />
+      <column caption='Job Type' datatype='string' name='[job_type]' role='dimension' type='nominal' />
+      <column caption='Last Processed Time' datatype='string' name='[last_processed_time]' role='dimension' type='nominal' />
+      <column caption='Last Status' datatype='string' name='[last_status]' role='dimension' type='nominal' />
+      <column caption='Search City' datatype='string' name='[search_city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Search Country' datatype='string' name='[search_country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Search Position' datatype='string' name='[search_position]' role='dimension' type='nominal' />
+      <column-instance column='[has_cloud]' derivation='Sum' name='[sum:has_cloud:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[has_excel]' derivation='Sum' name='[sum:has_excel:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[has_python]' derivation='Sum' name='[sum:has_python:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[has_statistics]' derivation='Sum' name='[sum:has_statistics:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[has_tableau]' derivation='Sum' name='[sum:has_tableau:qk]' pivot='key' type='quantitative' />
+      <drill-paths>
+        <drill-path name='search_country, search_city'>
+          <field>[search_country]</field>
+          <field>[search_city]</field>
+        </drill-path>
+      </drill-paths>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/admin/AppData/Local/Temp/TableauTemp/#TableauTemp_0cclyjs1pwqrno1byc6x40dn176q.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='01/09/2026 06:53:17 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>job_link</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_link]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_link</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12217</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_processed_time</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[last_processed_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_processed_time</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7672</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>last_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[last_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>last_status</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>got_summary</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[got_summary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>got_summary</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>got_ner</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[got_ner]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>got_ner</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_being_worked</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[is_being_worked]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_being_worked</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>job_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_title</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3055</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2205</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>job_location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_location</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1320</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>first_seen</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[first_seen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>first_seen</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>search_city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[search_city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>search_city</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>821</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>search_country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[search_country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>search_country</remote-alias>
+              <ordinal>11</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>search_position</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[search_position]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>search_position</remote-alias>
+              <ordinal>12</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>614</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>job_level</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_level</remote-alias>
+              <ordinal>13</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>job_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_type</remote-alias>
+              <ordinal>14</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>job_summary</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_summary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_summary</remote-alias>
+              <ordinal>15</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4453</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>has_python</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[has_python]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>has_python</remote-alias>
+              <ordinal>16</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>has_sql</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[has_sql]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>has_sql</remote-alias>
+              <ordinal>17</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>has_excel</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[has_excel]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>has_excel</remote-alias>
+              <ordinal>18</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>has_power_bi</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[has_power_bi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>has_power_bi</remote-alias>
+              <ordinal>19</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>has_tableau</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[has_tableau]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>has_tableau</remote-alias>
+              <ordinal>20</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>has_machine_learning</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[has_machine_learning]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>has_machine_learning</remote-alias>
+              <ordinal>21</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>has_statistics</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[has_statistics]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>has_statistics</remote-alias>
+              <ordinal>22</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>has_cloud</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[has_cloud]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>has_cloud</remote-alias>
+              <ordinal>23</ordinal>
+              <family>cleaned_jobs.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1l18vb401wdbtx1d0ws000qgo0l5].[sum:has_cloud:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1l18vb401wdbtx1d0ws000qgo0l5].[sum:has_statistics:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1l18vb401wdbtx1d0ws000qgo0l5].[sum:has_tableau:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1l18vb401wdbtx1d0ws000qgo0l5].[sum:has_python:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1l18vb401wdbtx1d0ws000qgo0l5].[sum:has_excel:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='cleaned_jobs.csv' id='cleaned_jobs.csv_AF6C02E70BD24E1FB9A617FCD81A1F2F'>
+            <properties context=''>
+              <relation connection='textscan.0sjatzo1hbd7my1drz6us1ajfalb' name='cleaned_jobs.csv' table='[cleaned_jobs#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='job_link' ordinal='0' />
+                  <column datatype='string' name='last_processed_time' ordinal='1' />
+                  <column datatype='string' name='last_status' ordinal='2' />
+                  <column datatype='boolean' name='got_summary' ordinal='3' />
+                  <column datatype='boolean' name='got_ner' ordinal='4' />
+                  <column datatype='boolean' name='is_being_worked' ordinal='5' />
+                  <column datatype='string' name='job_title' ordinal='6' />
+                  <column datatype='string' name='company' ordinal='7' />
+                  <column datatype='string' name='job_location' ordinal='8' />
+                  <column datatype='date' name='first_seen' ordinal='9' />
+                  <column datatype='string' name='search_city' ordinal='10' />
+                  <column datatype='string' name='search_country' ordinal='11' />
+                  <column datatype='string' name='search_position' ordinal='12' />
+                  <column datatype='string' name='job_level' ordinal='13' />
+                  <column datatype='string' name='job_type' ordinal='14' />
+                  <column datatype='string' name='job_summary' ordinal='15' />
+                  <column datatype='integer' name='has_python' ordinal='16' />
+                  <column datatype='integer' name='has_sql' ordinal='17' />
+                  <column datatype='integer' name='has_excel' ordinal='18' />
+                  <column datatype='integer' name='has_power_bi' ordinal='19' />
+                  <column datatype='integer' name='has_tableau' ordinal='20' />
+                  <column datatype='integer' name='has_machine_learning' ordinal='21' />
+                  <column datatype='integer' name='has_statistics' ordinal='22' />
+                  <column datatype='integer' name='has_cloud' ordinal='23' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleaned_jobs' name='federated.1l18vb401wdbtx1d0ws000qgo0l5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l18vb401wdbtx1d0ws000qgo0l5'>
+            <column caption='Got Summary' datatype='boolean' name='[got_summary]' role='dimension' type='nominal' />
+            <column caption='Has Cloud' datatype='integer' name='[has_cloud]' role='measure' type='quantitative' />
+            <column caption='Has Excel' datatype='integer' name='[has_excel]' role='measure' type='quantitative' />
+            <column caption='Has Python' datatype='integer' name='[has_python]' role='measure' type='quantitative' />
+            <column caption='Has Statistics' datatype='integer' name='[has_statistics]' role='measure' type='quantitative' />
+            <column caption='Has Tableau' datatype='integer' name='[has_tableau]' role='measure' type='quantitative' />
+            <column caption='Last Processed Time' datatype='string' name='[last_processed_time]' role='dimension' type='nominal' />
+            <column-instance column='[got_summary]' derivation='None' name='[none:got_summary:nk]' pivot='key' type='nominal' />
+            <column-instance column='[last_processed_time]' derivation='None' name='[none:last_processed_time:nk]' pivot='key' type='nominal' />
+            <column-instance column='[has_cloud]' derivation='Sum' name='[sum:has_cloud:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[has_excel]' derivation='Sum' name='[sum:has_excel:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[has_python]' derivation='Sum' name='[sum:has_python:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[has_statistics]' derivation='Sum' name='[sum:has_statistics:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[has_tableau]' derivation='Sum' name='[sum:has_tableau:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1l18vb401wdbtx1d0ws000qgo0l5].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l18vb401wdbtx1d0ws000qgo0l5].[sum:has_cloud:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l18vb401wdbtx1d0ws000qgo0l5].[sum:has_excel:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l18vb401wdbtx1d0ws000qgo0l5].[sum:has_statistics:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1l18vb401wdbtx1d0ws000qgo0l5].[sum:has_tableau:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1l18vb401wdbtx1d0ws000qgo0l5].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1l18vb401wdbtx1d0ws000qgo0l5].[Multiple Values]' field-type='quantitative' max='3169.4919300120237' min='-966.13462439006253' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1l18vb401wdbtx1d0ws000qgo0l5].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l18vb401wdbtx1d0ws000qgo0l5].[Multiple Values]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1l18vb401wdbtx1d0ws000qgo0l5].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1l18vb401wdbtx1d0ws000qgo0l5].[sum:has_python:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1l18vb401wdbtx1d0ws000qgo0l5].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1l18vb401wdbtx1d0ws000qgo0l5].[Multiple Values] + [federated.1l18vb401wdbtx1d0ws000qgo0l5].[sum:has_python:qk])</rows>
+        <cols>([federated.1l18vb401wdbtx1d0ws000qgo0l5].[none:got_summary:nk] / ([federated.1l18vb401wdbtx1d0ws000qgo0l5].[none:last_processed_time:nk] / [federated.1l18vb401wdbtx1d0ws000qgo0l5].[:Measure Names]))</cols>
+      </table>
+      <simple-id uuid='{79948AE3-6E71-4396-A098-BA6EBDBAC43A}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1l18vb401wdbtx1d0ws000qgo0l5].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1l18vb401wdbtx1d0ws000qgo0l5].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{734F6193-C4F0-4B7E-9DFF-556CAF37E98B}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
